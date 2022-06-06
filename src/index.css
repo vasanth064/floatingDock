@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url('./../assets/bg.jpg');
+  height: 100vh;
+  width: 100vw;
+}
+.dockContainer {
+  height: 100%;
+  position: relative;
+}
+.dockList {
+  position: absolute;
+  list-style: none;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  border-radius: 5rem;
+  transition: left ease-in 0.5s;
+}
+.dockListItem {
+  padding: 0.25rem;
+  margin: 1rem auto;
+  border-radius: 50%;
+}
+.dockIcon {
+  height: 36px;
+  width: 36px;
+}
+.dockActive {
+  left: 1rem;
+}
